@@ -160,6 +160,6 @@
         </repository>
     </repositories>
     <scm>
-        <connection>scm:git:https://github.com/Appdynamics/azure-monitoring-extension.git</connection>
+        <connection>scm:git:https://github.com/Appdynamics/gce-monitoring-extension.git</connection>
     </scm>
 </project>
