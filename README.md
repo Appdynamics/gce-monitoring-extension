@@ -72,7 +72,7 @@ The following metrics are reported.
 |GCE/{Project ID}/Region/{region}/Quota/STATIC_ADDRESSES/Usage|statis addresses used|
 
 #Custom Dashboard
-![]()
+![](https://github.com/Appdynamics/gce-monitoring-extension/raw/master/gce_monitoring_extension.png)
 
 ##Contributing
 
