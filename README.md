@@ -80,7 +80,7 @@ Always feel free to fork and contribute any changes directly here on GitHub.
 
 ##Community
 
-Find out more in the [AppSphere]() community.
+Find out more in the [AppSphere](http://appsphere.appdynamics.com/t5/AppDynamics-eXchange/Google-Compute-Engine-Monitoring-Extension/idi-p/6927) community.
 
 ##Support
 
