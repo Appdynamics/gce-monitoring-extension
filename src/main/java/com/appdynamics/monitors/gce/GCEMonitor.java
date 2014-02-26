@@ -35,8 +35,12 @@ public class GCEMonitor extends AManagedMonitor {
 
     public TaskOutput execute(Map<String, String> taskArguments, TaskExecutionContext taskExecutionContext) throws TaskExecutionException {
 
+        String details=GCEMonitor.class.getPackage().getImplementationTitle();
+        String msg = "Using Monitor Version ["+details+"]";
         if (LOG.isDebugEnabled()) {
             LOG.debug("Starting GCE Monitor");
+            LOG.debug(msg);
+            
         }
 
         String serviceAccountId = taskArguments.get("ServiceAccountId");
