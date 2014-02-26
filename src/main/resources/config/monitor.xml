@@ -12,8 +12,8 @@
                 <type>java</type>
                 <execution-timeout-in-secs>60</execution-timeout-in-secs>
                 <task-arguments>
-                    <argument name="ServiceAccountId" is-required="true" default-value="556793072693-2u8snlqr04kmpsfrsoav93d7rkkig7di@developer.gserviceaccount.com" />
-                    <argument name="ServiceAccountP12FilePath" is-required="true" default-value="/home/satish/AppDynamics/GCE/Service-AC-Privatekey/fddc52e6b1ca2c83d465643dca0e767a24dafcf7-privatekey.p12" />
+                    <argument name="ServiceAccountId" is-required="true" default-value="556793....@developer.gserviceaccount.com" />
+                    <argument name="ServiceAccountP12FilePath" is-required="true" default-value="/home/....-privatekey.p12" />
                     <argument name="ProjectID" is-required="true" default-value="appdynamics-gce" />
 		       </task-arguments>
                 <java-task>

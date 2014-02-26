@@ -1,3 +1,4 @@
+
 package com.appdynamics.monitors.gce;
 
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
@@ -46,9 +47,6 @@ public class GCEMonitor extends AManagedMonitor {
             LOG.error("Please configure all the mandatory details in monitor .xml");
             throw new RuntimeException("Please configure all the mandatory details in monitor .xml");
         }
-
-        /*serviceAccountId = "556793072693-2u8snlqr04kmpsfrsoav93d7rkkig7di@developer.gserviceaccount.com";
-        serviceAccountP12FilePath = "/home/satish/AppDynamics/GCE/Service-AC-Privatekey/fddc52e6b1ca2c83d465643dca0e767a24dafcf7-privatekey.p12";*/
 
         Compute googleCompute = createGoogleCompute(serviceAccountId, serviceAccountP12FilePath);
 
@@ -129,26 +127,4 @@ public class GCEMonitor extends AManagedMonitor {
             metricWriter.printMetric(String.valueOf(metricValue));
         }
     }
-
-    /*public static void main(String[] args) throws GeneralSecurityException, IOException, TaskExecutionException, InterruptedException {
-        GCEMonitor gceMonitor = new GCEMonitor();
-        gceMonitor.execute(new HashMap<String, String>(), null);
-       *//* String serviceAccountId = "556793072693-2u8snlqr04kmpsfrsoav93d7rkkig7di@developer.gserviceaccount.com";
-        String serviceAccountP12FilePath = "/home/satish/AppDynamics/GCE/Service-AC-Privatekey/fddc52e6b1ca2c83d465643dca0e767a24dafcf7-privatekey.p12";
-
-        String projectId = "appdynamics-gce";
-        Compute googleCompute = gceMonitor.createGoogleCompute(serviceAccountId, serviceAccountP12FilePath);
-
-        Map<String, DisksScopedList> diskStats = GCEStats.getDiskStats(googleCompute, projectId);
-
-        for (Map.Entry<String, DisksScopedList> diskEntries : diskStats.entrySet()) {
-            System.out.println(diskEntries.getKey());
-            if(diskEntries.getValue().getDisks() != null) {
-                for(Disk disk : diskEntries.getValue().getDisks()) {
-                    System.out.println(disk.getName());
-                    System.out.println(disk.getSizeGb());
-                }
-            }
-        }*//*
-    }*/
 }
