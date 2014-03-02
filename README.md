@@ -7,7 +7,14 @@ This extension works only with the standalone machine agent.
 With GCE we can run large-scale workloads on virtual machines hosted on Google's infrastructure. The GCE monitoring extension captures statistics from the GCE and displays them in the AppDynamics Metric Browser.
 
 ##Prerequisite
-Create a service account for your GCE project and download the privatekey file (.p12 file).
+Create a service account for your GCE project and download the privatekey file (.p12 file). To do this:
+
+1. Log into the Google Cloud Console
+2. Click on the project you want to use the GCE monitoring extension with (or create one if you don't have one yet).
+3. Click "APIs & auth" in the left sidebar
+4. Click "Credentials" in the left sidebar
+5. Click "Create New Client ID" and choose "Service Account"
+A private key file (.p12 file) will be downloaded for you. Note the password for the private key! This private key is your client private key.
 
 ##Installation
 
